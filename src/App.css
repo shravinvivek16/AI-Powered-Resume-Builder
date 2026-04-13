@@ -1,0 +1,251 @@
+.app-shell {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem;
+  align-items: start;
+}
+
+.panel {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 1.4rem;
+  border: 1px solid #f1d7db;
+  box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
+  min-width: 0;
+  overflow: hidden;
+}
+
+h1 {
+  margin: 0 0 0.35rem;
+  font-size: 1.85rem;
+  color: #0f172a;
+}
+
+.eyebrow {
+  margin: 0 0 0.35rem;
+  color: #b91c1c;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subtext {
+  margin: 0 0 1rem;
+  color: #475569;
+}
+
+.form-grid {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.form-panel,
+.preview-panel {
+  width: 100%;
+}
+
+label {
+  display: grid;
+  gap: 0.45rem;
+  font-size: 0.88rem;
+  color: #334155;
+  font-weight: 600;
+}
+
+input,
+select,
+button {
+  font: inherit;
+  border-radius: 12px;
+}
+
+input,
+select {
+  padding: 0.7rem 0.8rem;
+  border: 1px solid #e2e8f0;
+  background: #ffffff;
+  color: #0f172a;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #fecaca;
+  border-color: #ef4444;
+}
+
+.companies {
+  border: 1px solid #fecdd3;
+  border-radius: 14px;
+  padding: 0.8rem;
+  background: linear-gradient(180deg, #fff7f8, #ffffff 35%);
+}
+
+.companies h3 {
+  margin: 0 0 0.65rem;
+  font-size: 0.98rem;
+  color: #0f172a;
+}
+
+.company-row {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr) auto;
+  margin-bottom: 0.55rem;
+}
+
+button {
+  border: 1px solid transparent;
+  cursor: pointer;
+  padding: 0.63rem 0.95rem;
+  transition: all 160ms ease;
+  font-weight: 600;
+}
+
+.primary {
+  background: linear-gradient(135deg, #b91c1c, #991b1b);
+  color: #ffffff;
+}
+
+.primary:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.ghost {
+  background: #fff1f2;
+  border-color: #fecdd3;
+  color: #9f1239;
+}
+
+.error {
+  color: #b91c1c;
+  margin-top: 0.9rem;
+  background: #fff1f2;
+  border: 1px solid #fecdd3;
+  border-radius: 10px;
+  padding: 0.55rem 0.65rem;
+  font-size: 0.9rem;
+}
+
+.preview-panel {
+  display: grid;
+  gap: 0.85rem;
+  justify-items: center;
+  background: radial-gradient(circle at top, #fff5f5, #ffffff 40%);
+}
+
+.resume-preview {
+  border-radius: 16px;
+  padding: 1.1rem 1.15rem;
+  width: 100%;
+  max-width: 794px;
+  aspect-ratio: 210 / 297;
+  min-height: 420px;
+  max-height: 1123px;
+  overflow: hidden;
+  font-size: 0.92rem;
+  line-height: 1.28;
+  border: 1px solid #e2e8f0;
+}
+
+.resume-preview h2 {
+  margin: 0;
+  color: #0b1f46;
+  letter-spacing: 0.02em;
+}
+
+.resume-preview .headline {
+  margin-top: 0.3rem;
+  font-weight: 700;
+  color: #b91c1c;
+}
+
+.resume-preview .meta {
+  color: #475569;
+  margin-top: 0.2rem;
+}
+
+.resume-preview h3 {
+  margin: 0.62rem 0 0.26rem;
+  font-size: 0.95rem;
+  color: #0f172a;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.12rem;
+}
+
+.resume-preview .brief-paragraph {
+  margin: 0 0 0.35rem;
+  color: #334155;
+  font-size: 0.9rem;
+}
+
+.resume-preview ul {
+  margin: 0;
+  padding-left: 1.05rem;
+}
+
+.resume-preview li {
+  margin-bottom: 0.16rem;
+}
+
+.resume-preview.boardroom-red {
+  background: #ffffff;
+  border-top: 10px solid #b91c1c;
+  box-shadow: inset 0 0 0 2px #fee2e2;
+}
+
+.resume-preview.navy-stripe {
+  background: #ffffff;
+  border-left: 11px solid #0b1f46;
+  border-top: 4px solid #b91c1c;
+  box-shadow: inset 0 0 0 1px #dbeafe;
+}
+
+.resume-preview.crimson-edge {
+  background: #ffffff;
+  border: 2px solid #0b1f46;
+  box-shadow: inset 0 0 0 7px #fff5f5;
+}
+
+.resume-preview.signature-duo {
+  background: #ffffff;
+  border-top: 8px solid #0b1f46;
+  border-right: 8px solid #b91c1c;
+  box-shadow: inset 0 0 0 2px #e2e8f0;
+}
+
+.resume-preview.signature-duo .headline,
+.resume-preview.crimson-edge .headline {
+  color: #0b1f46;
+}
+
+.resume-preview.navy-stripe h3 {
+  color: #0b1f46;
+}
+
+.resume-preview.boardroom-red h3,
+.resume-preview.crimson-edge h3,
+.resume-preview.signature-duo h3 {
+  border-bottom-color: #fecaca;
+}
+
+@media (max-width: 980px) {
+  .app-shell {
+    grid-template-columns: 1fr;
+  }
+
+  .panel {
+    padding: 1.05rem;
+  }
+
+  .company-row {
+    grid-template-columns: 1fr;
+  }
+
+  .resume-preview {
+    aspect-ratio: auto;
+    min-height: 420px;
+    height: auto;
+  }
+}
